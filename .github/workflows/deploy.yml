@@ -34,7 +34,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Build with VitePress
-        run: npm run docs:build
+        run: pnpm run build   # 原来是 pnpm run docs:build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
